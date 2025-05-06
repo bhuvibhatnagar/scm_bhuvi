@@ -13,7 +13,7 @@ jobs:
         with:
           script: |
             const prAuthor = context.payload.pull_request.user.login;
-            const message = `🎉 Welcome @${prAuthor}! Thanks for opening your first pull request. We appreciate your contribution! 🙌`;
+            const message = ` Welcome @${prAuthor}! Thanks for opening your first pull request. We appreciate your contribution!`;
             github.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
